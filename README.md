@@ -2,6 +2,12 @@
 c++ http library
 
 # usage
+ #include "ehttp.h"
+
+ this uses libcurl so have it downloaded.
+
+ g++ x.cpp -o x -lcurl
+ 
  ```
  auto r = ehttp::Get("https://httpbin.org/get"); 
  std::cout << "Status: " << r.status << "\n"; 
